@@ -25,17 +25,53 @@
 				<table width="100%">
 					<tr>
 						<!-- IMAGEM -->
-						<td>http://lorempixel.com/300/300/cats</td>
+						<td>
+							<img src="http://lorempixel.com/300/300/cats"/>
+						</td>
 						<!-- TEXTO -->
 						<td>
 								<p><b>Marque sua consulta</b></p>
 
 								<p>Marque sua Consulta:</p>
+								<ul>
+									<li>Gato(R$ 50)</li>
+									<li>Cachorro (R$ 70)</li>
+									<li>Pássaro (<strike>R$40</strike> por <b>R$20</b>)</li>
+								</ul>
+								<fieldset>
+									<legend>Formulário</legend>
 
-								Gato(R$ 50)
-								Cachorro (R$ 70)
-								Pássaro (<strike>R$40</strike> por <b>R$20</b>)
+									<!-- DONO -->
+									<label for="dono">Dono</label>
+									<input type="text" id="dono" name="dono" placeholder="Carlos" /><br/>
 
+									<!-- NOME DO ANIMAL -->
+									<label for="animal">Nome do animal</label>
+									<input type="text" id="animal" name="animal" placeholder="Animal" /><br/>
+
+									<!-- DONO -->
+									<label for="dono">Dono</label>
+									<input type="text" id="dono" name="dono" placeholder="Carlos" /><br/>
+
+
+									<!-- DATA DA CONSULTA -->
+									<label for="data">Data da Consulta</label>
+									<input type="date" id="data" name="data" /><br/>
+
+									<!-- RACA -->
+									<label>Raças</label>
+									<input type="radio" name="raca" value="1" checked="">Gato 
+									<input type="radio" name="raca" value="2">Cachorro 
+									<input type="radio" name="raca" value="3">Passaro<br/>
+
+									<!-- OBSERVACAO -->
+									<label for="observacao">Observação:</label><br/>
+									<textarea id="observacao" cols="50"
+									placeholder="Teste" 
+									></textarea>
+									<br/>
+									<input type="submit" name="Confirmar!" />
+								</fieldset>
 						</td>
 					</tr>
 				</table>
